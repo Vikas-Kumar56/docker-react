@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t appImage -f Dockerfile.dev .
+  - docker build -t amolkumar56/appImage -f Dockerfile.dev .
 
 script:
-  - docker run appImage npm run test -- --coverage
+  - docker run amolkumar56/appImage npm run test -- --coverage
