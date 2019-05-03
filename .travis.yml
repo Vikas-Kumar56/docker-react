@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t amolkumar56/appImage -f Dockerfile.dev .
+  - docker build -t vikas-kumar56/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run amolkumar56/appImage npm run test -- --coverage
+  - docker run vikas-kumar56/docker-react npm run test -- --coverage
