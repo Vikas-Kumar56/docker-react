@@ -7,3 +7,9 @@ before_install:
 
 script:
   - docker run vikas-kumar56/docker-react npm run test -- --coverage
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_TOKEN
+  app: "docker-react-vapp"
